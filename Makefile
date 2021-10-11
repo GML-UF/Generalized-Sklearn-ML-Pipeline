@@ -18,7 +18,7 @@ help:
     @echo "       build sphinx documentation"
 
 prepare-dev:
-    sudo apt-get -y install python3.5 python3-pip
+    sudo apt-get -y install python3.9 python3-pip
     python3 -m pip install virtualenv
     make venv
 
