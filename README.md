@@ -1,17 +1,28 @@
 # Generalized-Sklearn-ML-Pipeline
 Summary: Image processing pipeline for serotonin detection using SVM and Gradient Bossting Algorithms.
 
-# a_dataGeneration
-Folders: __pycache__, rawData
-Files: __init__.py, TrainGUI.py
+# Installation
+Create a new virtual enviornment (or however you'd prefer to setup your python workspace). Go into command prompt (windows) or terminal (mac) and follow this command prompt example:
+
+'''
+C:\Windows\system32> cd [your repo path here]
+[repo path]> [activate virtual enviornment]
+[repo path]> python .\src\setup.py install
+'''
+
+The setup.py should add the package to your virtual enviornment so you can use the files and scripts. 
+
+# STEP1: a_dataGeneration
+Folders: \_\_pycache\_\_, rawData
+Files: \_\_init\_\_.py, TrainGUI.py
 
 ### TrainGUI.py
 
-# b_dataAggregation
-Folders: __pycache__, aggregateData, processedData
-Files: __init__.py, dataPreProcessing.py
+# STEP2: b_dataAggregation
+Folders: \_\_pycache\_\_, aggregateData, processedData
+Files: \_\_init\_\_.py, dataPreProcessing.py
 ## Folders
-1. __pychache__:: codegen folder for cython compiles.
+1. \_\_pychache\_\_:: codegen folder for cython compiles.
 
 2. aggregateData:: folder for storing the pickled and concatenated training data.
 
@@ -20,18 +31,18 @@ Files: __init__.py, dataPreProcessing.py
 ## Files
 ### dataPreProcessing.py
 
-# c_dataValidation
+# STEP3: c_dataValidation
 Folders: saveBin
-Files: __init__.py, dataCrossValid.py
+Files: \_\_init\_\_.py, dataCrossValid.py
 ## Folders
 1. saveBin:: folder for storing the train-test split data (k-fold). 
 
 ## Files
 ### dataCrossValid.py
 
-# d_modelTrianing
+# STEP4: d_modelTrianing
 Folders: saveBin
-Files: __init__.py, main-KNN.py, main-SVM.py, main-XGB.py
+Files: \_\_init\_\_.py, main-KNN.py, main-SVM.py, main-XGB.py
 ## Folders
 1. saveBin:: folder contains folders for saving each model generated from data.
 
@@ -48,9 +59,9 @@ Files: __init__.py, main-KNN.py, main-SVM.py, main-XGB.py
 ### main-XGB.py
 
 
-# e_modelTesting
+# STEP5: e_modelTesting
 Folders: saveBin
-Files: __init__.py, modelTesting.py
+Files: init.py, modelTesting.py
 ## Folders
 1. saveBin:: folder contains figures and images made availble by using modelTesting.py
 
@@ -59,10 +70,10 @@ Files: __init__.py, modelTesting.py
 
 
 # localModules
-Folders: __pycache__
+Folders: \_\_pycache\_\_
 Files: DataManager.py, Filters.py, ProcessPipe.py, ThreeD_Recon_V3.py
 ## Folders
-1. __pycache__: codegen folder for cython compiles.
+1. \_\_pycache\_\_: codegen folder for cython compiles.
 
 ## Files
 ### DataManager.py
